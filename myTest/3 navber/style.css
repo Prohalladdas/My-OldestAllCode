@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    /* display: block; */
+    margin-top: 15px;
+}
+
+.humbergar {
+    /* display: block; */
+    height: 30px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+
+}
+
+.humbergar .menu,
+.humbergar::after,
+.humbergar::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 76%;
+    background-color: #000000;
+    margin: 3px 0px;
+    transition: 0.4s;
+    border-radius: 14px;
+}
+
+/* .humbergar.iss-active::before {
+    transform: rotate(-27deg) translate(-5px, 10px);
+}
+
+.humbergar.iss-active::after {
+    transform: rotate(27deg) translate(-5px, -10px);
+}
+
+.humbergar.iss-active .menu {
+    opacity: 0;
+} */
+
+/* content after click */
+/* .after-click-content.is-active {
+    top: 0vh;
+    height: 0vh;
+    
+} */
+
+.mobile-nav.iss-active {
+    top: 50px;
+}
+
+.mobile-nav {
+    position: absolute;
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    background-color: #ECF7FC;
+    /* top: -150px; */
+    /* left:100px; */
+    height: 100px;
+    width: 100%;
+    min-height: 0px;
+    margin: auto;
+    overflow: hidden;
+    transition: 1s
+}
+
+
+.image {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    background-size: cover;
+    height: 100px;
+    width: 60px;
+    overflow: hidden;
+}
+
+#mob-cont.iss-active {
+    display: block;
+}
+
+#mob-cont {
+    display: none;
+}

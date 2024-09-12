@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            text-align:center;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        .box {
+            background-color: rgb(68, 215, 255);
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 12px;
+             /* transform: all 1s ease-in-out ;  */
+             transition-property: all;
+            transition-duration: 1s;
+             transition-timing-function: ease-in-out;  
+             
+
+    
+        }
+        .box:hover{
+            /* color: red;
+            background-color: rgb(0, 0, 0);
+            transform: rotate(360deg); */
+
+            /* transform: skewx(40deg); */
+
+             /* transform: skewy(40deg);  */
+
+             /* transform:scaley(2);  */
+             /* transform:scaleX(2);  */
+
+             background-color: black;
+             color: white;
+             font-size: 20px;
+             
+             transform: translate(100px,100px);
+             /* transform: translate(0px ,122px); */
+
+        }
+        h1{
+            text-align: center;
+            padding: 30px;
+            color: rgb(255, 0, 0);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS &ThinSpace; Transform</h1>
+    <div class="container">
+        <div class="box">
+            Future is bright
+        </div>
+    </div>
+</body>
+
+</html>

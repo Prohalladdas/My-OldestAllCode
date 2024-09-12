@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function ins JS</title>
+</head>
+
+<body>
+    <h2>Arrow Function ins JS</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id facilis fugit blanditiis unde deserunt illum illo
+        aperiam tempora quidem, eos culpa qui eligendi perspiciatis sint non explicabo saepe nihil expedita et. Optio,
+        aliquam. Eius asperiores mollitia, nisi sequi autem, deserunt laboriosam praesentium, officiis distinctio optio
+        aspernatur commodi voluptatum! Deserunt commodi temporibus repellat aliquam placeat alias perspiciatis illum,
+        earum reprehenderit eos laboriosam cupiditate, quasi harum facilis delectus saepe, nulla voluptatibus veritatis
+        perferendis provident excepturi? Commodi nostrum asperiores a qui, soluta dolorem, animi, maiores veniam et eius
+        mollitia! Nihil praesentium, animi doloremque corporis tenetur hic unde autem quod accusantium voluptates
+        deserunt harum ipsam optio laborum blanditiis, nisi voluptatibus dicta? Quas illum voluptatem aut eum, quaerat
+        tenetur nemo nihil eos blanditiis, ad earum asperiores sequi quo? Incidunt corporis cumque vel enim sapiente,
+        dolore deserunt? Quisquam eveniet suscipit vero, adipisci facilis eum aperiam possimus sapiente dolores error
+        corporis ipsum, ab sint laboriosam voluptate ducimus in minus, nisi iure! Exercitationem, aut consectetur nihil
+        ad quibusdam officiis veritatis voluptatum et quos corporis blanditiis repellat fugiat sapiente labore facere
+        accusamus nisi tempore necessitatibus voluptates alias delectus quia hic? Explicabo tempore quo illo illum quos
+        dicta quisquam nobis accusamus facilis, sit sunt maiores sapiente iste. Ex consequatur enim adipisci voluptatum
+        facilis, ad exercitationem maiores quibusdam natus, expedita molestiae impedit harum saepe sit vel atque magni.
+        Repellendus asperiores ratione delectus exercitationem maxime beatae placeat minima, reprehenderit corporis
+        maiores excepturi quis ea ipsam ad quod porro magnam voluptatibus, quo totam? Cumque est doloremque eligendi
+        itaque ipsam ipsa perspiciatis voluptas sunt! Facere quae eaque excepturi non dolores, molestias quam asperiores
+        dolorum repudiandae sequi voluptate, doloribus voluptatibus pariatur officiis animi ullam cumque laborum
+        impedit! Dolores, reiciendis saepe? Perspiciatis doloribus sequi laudantium adipisci optio, perferendis
+        voluptates vero inventore deserunt nemo voluptatem sunt vitae, expedita voluptate quis illo modi dignissimos
+        iste nisi, eum et.</p>
+
+
+    <script>
+        function lol() {
+            console.log('Naruto Uzumaki');
+        }
+        lol();
+
+        let lol1 = () => {
+            console.log('Kiski maki');
+        }
+        lol1();
+
+        let lol2 = () => console.log('Haynnn paaga, Uzumaki');
+        lol2();
+
+        // let sum=(a,b)=>{
+        //     return a+b;
+        // };
+        // sum();
+
+        // let sum2=(a,b)=>a+b;
+        // sum2();
+        // let half=a=> a/2;
+        // console.log(half);
+
+        setTimeout(() => {
+            console.log('Good Night');
+        }, 3000);
+
+
+        let obj = {
+            greeting:"bad",
+            names: [' Naruto', ' Sakura', ' Sauske'],
+            speak() {
+                this.names.forEach((student) => {
+                    console.log("Hii"+student);
+                });
+            }
+        }
+        obj.speak();
+    </script>
+</body>
+
+</html>

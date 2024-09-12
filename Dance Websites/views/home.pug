@@ -1,0 +1,35 @@
+//- extends base.pug
+
+block head
+  meta(charset="UTF-8")
+  link(rel="stylesheet", href="/static/style.css")
+  link(rel='stylesheet', href='/static/contctStyle.css')
+
+block content
+ div#navber
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Service]
+            li #[a(href="/contact", target="_blank",class="contacLi") Contact Us]
+ section#intro 
+        div.content
+         h3 Welcome to our Dance Academy
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Id temporibus ea saepe voluptatum eos vel nemo ratione ipsam necessitatibus, delectus reprehenderit enim alias perspiciatis, rem obcaecati quaerat. Repellat distinctio quo, amet eaque culpa exercitationem voluptas. Consequatur repudiandae odio error excepturi voluptates rem cumque dolores, debitis perferendis culpa ipsa dicta! Magni velit repudiandae ex, blanditiis odio error provident voluptate laudantium molestias voluptatem ratione odit consectetur facere tenetur consequuntur nulla placeat alias illum, magnam reiciendis impedit, dignissimos natus! Reprehenderit in asperiores laudantium recusandae soluta doloremque omnis odit sapiente impedit obcaecati. Animi, in similique quo laborum odit nostrum! Fugiat a tenetur rem quo.
+ div.heading 
+     | Select for Service
+ section#service 
+        div.service-cont
+                div.service-para
+                  h3 First Service
+                      p  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, a! Doloremque ipsum temporibus voluptates quis quisquam porro explicabo eligendi! Ipsa.
+                div.service-para
+                  h3 Second Service
+                      p  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, a! Doloremque ipsum temporibus voluptates quis quisquam porro explicabo eligendi! Ipsa.
+                div.service-para
+                  h3 Third Service
+                      p  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, a! Doloremque ipsum temporibus voluptates quis quisquam porro explicabo eligendi! Ipsa.
+
+block footer
+   footer.last-footer 
+        | Copyright © www.PoluDanceAcademy.com|All right reserved! 

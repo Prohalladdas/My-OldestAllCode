@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .item1 {
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: relative;
+            animation: circle1 5s 2s linear infinite alternate-reverse;
+            /* transform: matrix(1,0,0,1,165.48399353027344,165.48399353027344); */
+        }
+
+        @keyframes circle1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 100px;
+                height: 160px;
+                width: 160px;
+            }
+
+            50% {
+                position: relative;
+                top: 0px;
+                left: 150px;
+                height: 180px;
+                width: 180px;  
+            }
+            
+            75% {
+                top: 0px;
+                left: 0px;
+                height: 180px;
+                width: 180px;
+            }
+
+            100% {
+                top: 200px;
+                left: 0px;
+                height: 180px;
+                width: 180px;
+            }
+        }
+
+
+        .item2 {
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        /* .box1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            border-radius: 50%;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="animation-container">
+        <div class="circle">
+            <div class="item1">
+                <div class="box1"></div>
+            </div>
+            <div class="item2">
+                <div class="box2"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

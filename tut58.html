@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SetTimeout and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        <h2>JS SetTimeout and ClearTimeout</h2>
+        <p id="timeParagraph">This Time Now</p>
+    </div>
+
+
+    <script>
+        // function greet(name,byeText){
+        //     console.log("Hello"+name+""+byeText)
+        // }
+
+        // setTimeout(greet,3000," polu"," das");
+
+        // timeOut=setTimeout(greet,3000," polu"," das");
+        // console.log(timeOut);
+        // clearTimeout(timeOut);
+
+        // setInterval(greet,1000," polu"," das");
+
+        // intervalId=setInterval(greet,3000," polu"," das")
+        // clearInterval(intervalId);
+
+        // live time
+        function displayTime(){
+            // time= new Date();
+            // console.log(time);
+            // document.getElementById('time'),innerHTML=time;
+            var time = new Date();
+            var formattedTime = time.toLocaleTimeString();
+            console.log(formattedTime);
+            document.getElementById('timeParagraph').innerHTML = formattedTime;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

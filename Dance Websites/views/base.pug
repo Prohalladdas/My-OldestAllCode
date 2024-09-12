@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Polu Dance Academy
+    block head
+
+  //- block script
+  //- script(src='/static/index.js')
+
+  body
+    block content
+     div#navber
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Service]
+            li #[a(href="/contact", target="_blank") Contact Us]
+        
+    footer
+      p Copyright © 2023 My Website. All rights reserved.
+      block footer

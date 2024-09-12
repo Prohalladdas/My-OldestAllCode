@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector & more designing </title>
+    <style>
+    .container{
+        border: 3px solid rgb(130, 91, 13);
+        background-color: rgb(214, 187, 239);
+        padding: 34px;
+        margin: 34px auto;
+        width: 665px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: rgba(0, 0, 0, 0.676);
+        background-color: rgb(212, 97, 97);
+    }
+    a:visited{
+        color: rgb(0, 0, 0);
+        background-color: rgb(233, 238, 222);
+    }
+    a:active{
+        background-color: rgba(47, 74, 74, 0.406);
+    }
+    .btn{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgba(213, 59, 59, 0.904);
+        padding: 4px;
+        border: none;
+        cursor: pointer;
+        font-size: 11px;
+        border-radius: 4px;
+    }
+    .btn:hover{
+        color: rgba(26, 5, 5, 0.502);
+        background-color: rgba(150, 150, 150, 0.76);
+    }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+    <h3>This is heading</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis exercitationem voluptatum ratione quas dignissimos dolor dolorum id quos in magnam molestiae error perspiciatis alias tempore, consequuntur assumenda fuga repellat veritatis labore a libero delectus.</p>
+
+     <a href="https://i.pinimg.com/originals/ef/bd/6a/efbd6ae240125cbc64195cf3af543c4b.jpg"class="btn">Read more</a>
+     <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

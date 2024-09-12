@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #b1eaed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #c5f0f2;
+    /* height: 85%; */
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 22px 12px;
+    border-radius: 12px;
+    box-shadow: 1px 3px 13px 4px rgba(9, 9, 9, 0.169);
+
+}
+
+.input-item {
+    padding: 6px 6px;
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.input-item label {
+    margin-bottom: 8px;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+    padding:  6px;
+}
+.input-item .tex {
+    margin-bottom: 8px;
+    align-items: normal;
+    display: inline-block;
+    font-weight: 600;
+    padding:  6px;
+}
+
+.input-item input,
+.input-item textarea {
+    height: 40px;
+    width: 450px;
+    font-size: 12px;
+    letter-spacing: 2;
+
+}
+
+.input-item textarea {
+    height: 150px;
+}
+
+button {
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    border: 1px solid green;
+    background-color: aquamarine;
+    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(88, 255, 199);
+
+}
+/*  */
+.input-item span{
+    /* position: absolute; */
+    bottom: 12px;
+    left: 17px;
+    font-size: 12px;
+    color: red;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+#submit-error{
+    color: red;
+    margin-top:20px ;
+}
+.input-item span i{
+    color: rgb(0, 189, 0);
+    font-size: 24px;
+}

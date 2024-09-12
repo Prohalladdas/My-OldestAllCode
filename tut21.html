@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(129, 0, 215);
+            margin: 35px auto;
+            font-family: 'Sansita', sans-serif;
+            background-color: rgba(255, 248, 30, 0.221);
+        }
+
+        .item {
+            border: 2px solid rgb(255, 0, 136);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgba(205, 202, 230, 0.916);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #mobile {
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+
+        h1 {
+            margin:23px auto;
+            width: 308px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcom to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi
+                molestias accusamus ducimus harum veniam veritatis non recusandae, quibusdam atque. Ut recusandae
+                suscipit quisquam accusamus mollitia velit esse nihil totam dolores, officia dolor blanditiis ab. ipsum
+                dolor sit amet consectetur adipisicing elit. Dolores hic eius autem distinctio deserunt, consequatur,
+                saepe ab expedita repellat facere, placeat veritatis corporis sequi ex natus tempore ullam qui quibusdam
+                ut quis? Placeat, illum expedita qui illo alias ullam adipisci.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex consequatur
+                at iste ratione voluptatem commodi hic aut, quis reprehenderit voluptate dignissimos libero assumenda!
+                Unde qui illo a earum illum ipsam corrupti soluta dolore quas voluptates! ipsum dolor sit amet
+                consectetur adipisicing elit. Dolores hic eius autem distinctio deserunt, consequatur, saepe ab expedita
+                repellat facere, placeat veritatis corporis sequi ex natus tempore ullam qui quibusdam ut quis? Placeat,
+                illum expedita qui illo alias ullam adipisci.</p>
+        </div>
+        <div id="mobile" class="item">
+            <h3>Mobile</h3>
+            <p id="mobilepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic eius
+                autem distinctio deserunt, consequatur, saepe ab expedita repellat facere, placeat veritatis corporis
+                sequi ex natus tempore ullam qui quibusdam ut quis? Placeat, illum expedita qui illo alias ullam
+                adipisci.</p>
+        </div>
+        <div id="nokia" class="item">
+            <h3>Keypad mobile</h3>
+            <p id="nokiapara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores hic eius
+                autem distinctio deserunt, consequatur, saepe ab expedita repellat facere, placeat veritatis corporis
+                sequi ex natus tempore ullam qui quibusdam ut quis? Placeat, illum expedita qui illo alias ullam
+                adipisci.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

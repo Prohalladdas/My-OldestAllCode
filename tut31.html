@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1 {
+            color: red;
+            background-color: black;
+            text-align: center;
+        }
+        /* div p{
+            color: blue;
+            background-color: pink;
+        } */
+        /* div > p{
+            color: blue;
+            background-color: pink;
+        } */
+        .container::before{
+            background-image: url(https://i.pinimg.com/originals/1b/90/dc/1b90dc7f6beb5f6ec3cd49fa69f3ec77.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        div + p{
+            color: blue;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is heading</h1>
+    <div class="container">
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, enim ipsum!</p>
+            <ul>
+                <li>
+                    <p>UL Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, perferendis doloremque?</p>
+                </li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <p>Naruto Uzumali</p>
+</body>
+
+</html>

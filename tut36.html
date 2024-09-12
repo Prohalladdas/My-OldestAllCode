@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+    <style>
+        .container {
+            background-color: orchid;
+            text-align: center;
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: blueviolet;
+            height: 150px;
+            width: 150px;
+            position: relative;
+            animation-name: Polu1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: ease-in-out; */
+            /* animation-fill-mode:inherit; */
+            animation-direction: reverse;
+            /* animation: Polu1 2s ease-in 1s backwards; */
+            box-shadow: 2px 4px 4px rgba(127, 205, 72, 0.708);
+        }
+
+        @keyframes Polu1 {
+
+            /* from {
+                width: 50px;
+                height: 50px;
+            }
+
+            to {
+                width: 1000px;
+                height: 300px;
+            } */
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Polu
+        </div>
+    </div>
+</body>
+
+</html>

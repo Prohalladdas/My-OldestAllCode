@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EAEDED;
+}
+
+/* container ki  matlab hamburger kaha rahega  */
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.hamburger {
+    height: 42px;
+    width: 45px;
+    background-color: #d5a8ff;
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    /* iska kya kaam  hain nehi jaanta comment karne  ke baad bhi OUTPUT se kooii fark nehi  padta  */
+    appearance: none;
+    outline: none;
+}
+
+/* Yehi Hamburger hain */
+.hamburger .menu,
+.hamburger::after,
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 8px;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+/* Iska matlab hamburger click karne se  kaysa dikhega */
+.hamburger.iss-active::before {
+    /* Before ka matlab hamburrger ki upper ki line */
+    transform: rotate(-27deg) translate(-5px, 10px);
+}
+
+.hamburger.iss-active::after {
+    /* after ka matlab hamburrger ki niche ki line */
+    transform: rotate(23deg) translate(-4px, -10px);
+
+}
+
+.hamburger.iss-active .menu {
+    /* Iska matlab hamburger ki middlle line ko hide kar deta hain (after click) */
+    /* ye bhi importent hain */
+    opacity: 0;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Ye bohat importent hain --> matlab click karne ke baad kahase content ayega ye dicide karta hain  */
+.mobile-nav.iss-active {
+    /* Or pehle ye likhna padega warna aap dekh nehi payoye ki content keyse edit karna hain*/
+    top: 61px;
+    left: 0;
+    /* min-height: 40vh; */
+    height: 110px;
+
+}
+
+.mobile-nav {
+    /* mobile-nav --> ka matlav click karne se pehle content kaysa dikhega */
+    position: fixed;
+    width: 100%;
+    display: block;
+    background-color: #CCCCFF;
+
+    height: 0vh;
+    top: -135px;
+    min-height: 0vh;
+    overflow: hidden;
+    top: 62px;
+    transition: 2s
+}
+
+/* .mobile-nav a --> iska koii matlab nehi click event se */
+.mobile-nav a {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 0px 8px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0px auto 11px;
+    /* iska matlab center lena */
+    background-color: #da52ff4f;
+    color: black;
+
+}
+.mobile-nav a:hover {
+    background-color: #da52ff90;
+    color: black;
+
+}

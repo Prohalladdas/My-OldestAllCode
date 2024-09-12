@@ -1,0 +1,27 @@
+//- extends base.pug
+
+block script
+  script(src='/static/index.js')
+
+link(rel='stylesheet', href='/static/style.css')
+link(rel='stylesheet', href='/static/stylecontact.css')
+block content 
+    div#navber
+        ul 
+           li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Service]
+            li #[a(href="/") Contact Us]
+    div#formcontainer
+        h1.contactheading Contact Form
+        form(action="/contact", method="POST" class="myform") 
+         input(type="text" class="formInput" name="name" placeholder="Enter your name..")
+         input(type="number" class="formInput" name="number" placeholder="Enter your phone number")
+         input(type="email" class="formInput" name="email" placeholder="Enter your email id")
+         textarea(name="yourself", class="textbox" cols="30",  rows="10" placeholder="Enter yourself...")
+         div.s-button
+              div.s-button-box
+                 button(type="submit",class="btnsubmit") Submit
+
+    footer.last-footer 
+        | Copyright © www.PoluDanceAcademy.com|All right reserved! 

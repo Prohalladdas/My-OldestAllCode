@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navber navber navber navber'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: bisque;
+            padding: 12px;
+        }
+
+        #navber {
+            grid-area: navber;
+            text-align: center;
+            margin: 12px;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navber" class="item">Home About Us Service Contact Us</div>
+
+        <div id="section" class="item">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse officia architecto
+            at et molestias pariatur ratione veniam sint consequuntur numquam fugit itaque aliquid debitis voluptas
+            eaque, rem omnis similique optio tempore ut? Explicabo dolorem deleniti nostrum in amet quisquam aliquid ab
+            quam et hic beatae illo, suscipit dolor nesciunt sequi maxime ratione molestias perferendis a harum? Saepe,
+            sequi, quisquam veniam perferendis quo amet asperiores id expedita adipisci error beatae temporibus odit!
+            Esse autem quos, minima deserunt deleniti ipsa cum quaerat voluptatem est officia quas dignissimos tempore
+            provident reprehenderit placeat inventore excepturi earum dolore expedita. Sint quo debitis eos dicta et
+            perferendis, modi quasi ipsa veniam quidem recusandae in, provident libero molestias quis maiores impedit
+            obcaecati eum velit voluptates praesentium illum facilis quae? Voluptatibus officiis nam debitis at
+            exercitationem? Enim, reiciendis numquam laboriosam repudiandae, quo repellat vel totam aspernatur vitae
+            perspiciatis nesciunt delectus alias, beatae assumenda ipsam. Sunt illo nisi ut. Assumenda, maiores modi
+            dolore ipsam aliquam, numquam officia quae vero, voluptas nam at. Distinctio architecto commodi dolor
+            consequuntur quam rerum, ullam quia facere modi a quas qui nemo ipsam? Voluptas esse sequi exercitationem
+            aut, quaerat placeat. Tenetur voluptate, sit placeat mollitia necessitatibus beatae voluptatibus molestias
+            iusto? Et, tenetur inventore? Beatae!</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, quis? Ex iure dolores
+            repellendus laudantium, odio reprehenderit, similique maiores magnam aut ad rem amet sed repellat officiis
+            veniam asperiores hic cum omnis! Incidunt a odio, quasi tempore mollitia atque quas. Alias aperiam dolorum
+            amet quas doloribus beatae cumque sunt ratione, voluptatem nulla reprehenderit aut dolor voluptates, odit a
+            numquam excepturi veritatis, deleniti sint quasi ullam neque ea. Voluptates quaerat vero dolorum deleniti
+            natus voluptatum iste repudiandae? Inventore corrupti libero, esse iure quaerat quisquam beatae, odio unde
+            illum nobis ex blanditiis accusamus numquam enim consequuntur saepe debitis deleniti ipsa, voluptatibus
+            facilis ab recusandae deserunt nam qui. Tenetur quo repudiandae a iusto perspiciatis ipsa, numquam unde
+            doloribus. Tempore eos provident quas modi similique, possimus aliquam. Laudantium ipsum rerum, quia cum,
+            eveniet voluptates commodi impedit, saepe rem facilis maiores blanditiis. Aut iure eligendi laboriosam
+            dolorum? Sapiente quam fugiat excepturi ab quos. Officiis ratione, id voluptate aperiam beatae ducimus
+            commodi quisquam maxime! Veritatis nostrum sequi quasi fugiat ut culpa mollitia libero aut accusantium
+            cupiditate dolorum, fugit unde tenetur quaerat eligendi odit tempore expedita magnam. Atque molestias, minus
+            doloremque amet quos vero provident numquam corrupti odit cupiditate porro, repellat doloribus tenetur
+            blanditiis consectetur inventore eos!</div>
+
+        <footer class="item">www.CSS Grid.com | All servise provide!</footer>
+    </div>
+</body>
+
+</html>

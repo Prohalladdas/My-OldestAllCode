@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 80px;
+    width: 100%;
+    background-color: #dfe3ee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-content {
+    /* width: 55%;
+    border: 2px solid red; */
+    height: 80px;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.nav-content li {
+    padding: 44px;
+}
+
+.nav-content li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: 	#011f4b;
+}
+.nav-content li a:hover{
+    color: 	#00398f;
+}
+
+/* Hamburger */
+.holly{
+    width: 5%;
+    height: 40px;
+    display: block;
+}
+.hamburger{
+    display: block;
+    align-items: center;
+   height: 34px;
+   width: 34px;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+
+    appearance: none;
+    outline: none;
+}
+/* .hamburger .menu,
+.hamburger::after,
+.hamburger::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #011f4b;
+    margin: 6px 0px;
+    transition: 0.4s;
+} */
+
+.hamburger .menu,
+.hamburger::after,
+.hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    border-radius: 8px;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active::before{
+    transform: rotate(-27deg) translate(-5px,10px);
+}
+.hamburger.is-active::after{
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+
+.hamburger.is-active .menu{
+    opacity: 0;
+}
+/* After click content */
+/* .click-container.is-active{
+    border: 2px solid red;
+    left: 0;
+} */
+.click-container.is-active {
+    left: 0;
+}
+.click-container{
+    position: fixed;
+    top: 50px;
+    width: 100%;
+   left: 2000px;
+   min-height: 100vh;
+
+    display: block;
+    z-index: 98;
+    background-color: #12002f;
+
+    padding-top: 150px;
+    transition: 0.4s;
+}
+.click-container p{
+    display: block;
+    justify-content: center;
+    color: red;
+    font-size: 25px;
+    background-color: pink;
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Dates</title>
+</head>
+<body>
+    <div class="container">
+        <p>Currently Times <span class="time"></span></p>
+    </div>
+
+    <script>
+        console.log("This is JS Dates tutorial");
+        let dt = new Date();
+        console.log(dt);
+
+
+        let newDate=new Date(2112,8,3,10,59,37);
+        console.log(newDate);
+
+        // let yr= newDate getfullyear();
+        // console.log("This year is",yr);
+        // let yr= newDate getDate();
+        // console.log("This year is",yr);
+
+        newDate.setDate(32);
+        console.log(newDate)
+
+        newDate.setHours(32);
+        console.log(newDate)
+        console.log(newDate)
+        setInterval(updateTime,1000);
+
+        function updateTime(){
+            time.innerHTML=new date();
+        }
+    </script>
+</body>
+</html>

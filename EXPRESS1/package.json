@@ -1,0 +1,22 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "This is express tut",
+  "main": "app.js",
+  "scripts": {
+    "test": "app.js"
+  },
+  "keywords": [
+    "Hello"
+  ],
+  "author": "Polu",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

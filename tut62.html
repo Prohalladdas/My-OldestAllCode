@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <P>Lorem, ipsum dolor sit amet consectetur adipisicing POPOelit. Impedit a laboriosam quidem soluta excepturi ad dicta in, expedita eos modi vero amet delectus?PO</P>
+
+
+    <script>
+        let Object={
+
+            name:"POLU",
+            friend:"none",
+            hobbie:"Watching Anime",
+            food:"momo,"
+        }
+        console.log(Object);
+
+        let myjson=JSON.stringify(Object);
+        console.log(myjson);
+
+        myjson=myjson.replace('momo','biriyani');
+        console.log(myjson);
+     
+        newjson=JSON.parse(myjson);
+        console.log(newjson);
+    </script>
+</body>
+</html>

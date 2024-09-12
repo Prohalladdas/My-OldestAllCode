@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions in javascript</title>
+</head>
+<body>
+    
+    <script>
+        var str="This is a string"
+        console.log(str)
+
+        //First occurence of a substring
+        var position=str.indexOf('is')
+        console.log(position)
+
+        //Last occurence of a substring
+        var position=str.lastIndexOf('is')
+        console.log(position)
+
+        //Substring from a string
+        //  var substr = str.slice(1,9);
+        //  console.log(substr)
+        //  same substring eta
+        var substr = str.substr(1,9);
+        console.log(substr)
+
+        // var replaced=str.replace('string','POLU')
+        // console.log(str)
+        // console.log(replaced)
+
+        //CAPITAL SPELL
+        console.log(str.toLocaleUpperCase())
+         //small spell
+        // console.log(str.toLocaleLowerCase())
+
+        // var Newstring=str.concat('New String')
+        // console.log(Newstring)
+
+        // var char=str.charAt(2);
+        // var char=str.charCodeAt(2);
+        // console.log(char)
+
+        console.log(str[2])
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables/Curtom properties</title>
+    <style>
+        :root{
+            --denger-color:rgba(3, 158, 255, 0.386);
+            --primary-color:rgba(24, 22, 37, 0.772);
+            --maxw:700px;
+        }
+        .box {
+            /* --box-color:rgba(98, 255, 0, 0.669); */
+            background-color: var(--denger-color);
+            box-shadow: 2px 3px 4px var(--primary-color);
+            border: 2px solid darkblue;
+            width: 150px;
+            height: 150px;
+            margin: 1px 8px;
+        }
+        .container {
+            display: flex;
+            width: 900px;
+            margin: auto;
+            text-align: center;
+            max-width: var(--maxw);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">E</div>
+        <div class="box">M</div>
+        <div class="box">P</div>
+        <div class="box">T</div>
+        <div class="box">Y</div>
+    </div>
+</body>
+
+</html>

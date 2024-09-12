@@ -1,0 +1,17 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "Welcome to express installing.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express"
+  ],
+  "author": "POLU",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
